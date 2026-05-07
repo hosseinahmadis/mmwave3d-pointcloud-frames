@@ -38,7 +38,7 @@ pip install numpy matplotlib h5py
 
 The dataset is hosted on Google Drive as a single ZIP file.
 
-**Download link:** _[link will be added upon public release]_
+**Download link:** [new_frames.zip — Google Drive](https://drive.google.com/file/d/15rQVJGBP2az3pPDOogL0kc_vKRtU86dN/view?usp=sharing)
 
 ### Setup steps
 
