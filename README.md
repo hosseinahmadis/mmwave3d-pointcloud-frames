@@ -218,14 +218,56 @@ The dataset contains **20 activity classes** with **99,800 frames** in total (~1
 
 ## Sensor configuration
 
+### Hardware
+
 | Parameter | Value |
 |-----------|-------|
 | Sensor | TI AWR1843 / IWR6843 |
-| Carrier frequency | 60 GHz |
-| Range resolution | _(fill in)_ |
-| Velocity resolution | _(fill in)_ |
-| Frame rate | _(fill in)_ fps |
-| Subjects | _(fill in)_ |
+| Transmit antennas (TX) | 3 |
+| Receive antennas (RX) | 4 |
+| Virtual antennas | 12 |
+| LVDS lanes | 2 |
+
+### Chirp / waveform
+
+| Parameter | Value |
+|-----------|-------|
+| Start frequency | 60.00 GHz |
+| Chirp slope | 50.006 MHz/µs |
+| Ramp end time | 60 µs |
+| ADC sample rate | 6,000 ksps |
+| ADC samples per chirp | 256 |
+| Chirps per frame (loop count) | 128 |
+| Frame period | 100 ms |
+| **Frame rate** | **10 Hz** |
+
+### Derived performance
+
+| Parameter | Value |
+|-----------|-------|
+| Wavelength | 5.00 mm |
+| Bandwidth | 3.000 GHz |
+| **Range resolution** | **5.00 cm** |
+| Maximum range | ~18.0 m |
+| **Velocity resolution** | **0.041 m/s** |
+| Maximum velocity | ±2.60 m/s |
+
+### Processing
+
+| Parameter | Value |
+|-----------|-------|
+| Range FFT size | 2048 |
+| Doppler FFT size | 128 |
+| Angle FFT size | 180 |
+| FFT window | Blackman-Harris |
+| Azimuth FoV | ±60° |
+| Height filter | −0.5 m to +67 m |
+| FFT peaks per antenna group (`n_points_fft`) | 64 |
+| Raw points saved per frame | 1,024 (64 peaks × 16 antenna combos) |
+| Points per frame in H5 (`n_points`) | 64 (via FPS or intensity crop) |
+| Stacking size | 5 frames |
+| Stride | 1 (maximum overlap) |
+| Points per training sample | 320 (64 pts × 5 frames) |
 
 ---
 
