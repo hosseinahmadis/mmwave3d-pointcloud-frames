@@ -188,9 +188,31 @@ frame_ds = fps_sample(frame, n=64)   # (64, 5)
 
 ## Activities
 
-| Label | Description |
-|-------|-------------|
-| _(list your activity classes here)_ | |
+The dataset contains **20 activity classes** with **99,800 frames** in total (~1.9 GB uncompressed).
+
+| # | Activity | Frames | Shape | Size (MB) |
+|---|----------|--------|-------|-----------|
+| 0 | Bowing (D) | 5,000 | (5000, 1024, 5) | 97.7 |
+| 1 | Lunge (toward left side) | 5,000 | (5000, 1024, 5) | 97.7 |
+| 2 | Lunge (toward left-front) | 5,000 | (5000, 1024, 5) | 97.7 |
+| 3 | Lunge (toward right side) | 5,000 | (5000, 1024, 5) | 97.7 |
+| 4 | Lunge (toward right-front) | 5,000 | (5000, 1024, 5) | 97.7 |
+| 5 | Mark time | 5,000 | (5000, 1024, 5) | 97.7 |
+| 6 | Picking Up Things | 5,000 | (5000, 1024, 5) | 97.7 |
+| 7 | Raising Hand Left | 5,000 | (5000, 1024, 5) | 97.7 |
+| 8 | Raising Hand Right | 5,000 | (5000, 1024, 5) | 97.7 |
+| 9 | Sitting | 5,000 | (5000, 1024, 5) | 97.7 |
+| 10 | Squat | 5,000 | (5000, 1024, 5) | 97.7 |
+| 11 | Standing | 5,000 | (5000, 1024, 5) | 97.7 |
+| 12 | Stretching and relaxing | 5,000 | (5000, 1024, 5) | 97.7 |
+| 13 | Throwing (toward left side) | 4,800 | (4800, 1024, 5) | 93.8 |
+| 14 | Throwing (toward right side) | 5,000 | (5000, 1024, 5) | 97.7 |
+| 15 | Twist Right | 5,000 | (5000, 1024, 5) | 97.7 |
+| 16 | Walking Upright | 5,000 | (5000, 1024, 5) | 97.7 |
+| 17 | Walking perpendicularly | 5,000 | (5000, 1024, 5) | 97.7 |
+| 18 | Waving Hand Left | 5,000 | (5000, 1024, 5) | 97.7 |
+| 19 | Waving Hand Right | 5,000 | (5000, 1024, 5) | 97.7 |
+| | **TOTAL** | **99,800** | | **1,949.2** |
 
 ---
 
