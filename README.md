@@ -114,6 +114,10 @@ Cells 1–5 give you:
 - A side-by-side comparison of `pad_or_crop` vs `fps_sample` on the same frame.
 - Per-activity window counts for different stride values.
 
+**Example — FPS down-sampling and frame stacking (Cell 4 & 5 output):**
+
+![FPS down-sampling and stacking](assets/image2.png)
+
 ### Step 3 — (Optional) Export to H5
 
 **Cell 6** packages everything into a single `.h5` file ready for model training.  
@@ -155,6 +159,10 @@ Each `frames.npy` array has shape `(F, N, 5)` where:
 | `5`  | Feature columns: **x, y, z** (metres), **intensity**, **Doppler speed** (m/s) |
 
 Real points have `intensity > 0`; zero-padded rows have all columns equal to 0.
+
+**Example — raw point-cloud samples (one frame per activity):**
+
+![Raw point-cloud samples](assets/image1.png)
 
 ---
 
