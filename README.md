@@ -273,15 +273,14 @@ The dataset contains **20 activity classes** with **99,800 frames** in total (~1
 
 ## Citation
 
-If you use this dataset in your research, please cite:
+If you use this dataset, please cite the dataset record below. A corresponding paper is currently in preparation; its citation will be added once available.
 
 ```bibtex
-@article{your_paper_doi,
-  title   = {[Paper title to be added]},
-  author  = {[Authors]},
-  journal = {[Venue]},
-  year    = {[Year]},
-  doi     = {[DOI — to be added upon publication]}
+@misc{ahmadi_mmwave3d_dataset,
+  author       = {Ahmadi, Hossein},
+  title        = {{mmWave3D} Dataset},
+  howpublished = {Dataset},
+  url          = {https://drive.google.com/file/d/1qcCSphtSGveJrE0K2x-V0NCQ9mlceLB7/view}
 }
 ```
 
